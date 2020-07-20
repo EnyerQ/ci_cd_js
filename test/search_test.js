@@ -1,7 +1,7 @@
 const assert = require('assert');
 const search = require('../search');
 
-describe("Search for a CD", () => {
+describe("Busca por un item/CD", () => {
     it("finds a match", () => {
         const artist = "Peter Gabriel";
         const title = "So";
@@ -10,7 +10,7 @@ describe("Search for a CD", () => {
         assert.deepEqual(search(catalogue, artist, title), cd);
     });
 
-    it("finds no match", () => {
+    it("No se encontro concidencia", () => {
         const artist = "Peter Gabriel";
         const title = "So";
         const cd = {artist: artist, title: title};
