@@ -1,8 +1,8 @@
 const assert = require('assert');
-const search = require('../search');
+const search = require('../search')
 
 describe("Busca por un item/CD", () => {
-    it("finds a match", () => {
+    it("Matchea los titulos", () => {
         const artist = "Peter Gabriel";
         const title = "So";
         const cd = {artist: artist, title: title};
